@@ -22,21 +22,6 @@ const addDoctor = async (req, res, next) => {
 
     console.log(req.body);
 
-    // console.log(
-    //   {
-    //     name,
-    //     email,
-    //     password,
-    //     speciality,
-    //     degree,
-    //     experience,
-    //     about,
-    //     fees,
-    //     address,
-    //   },
-    //   req.file
-    // );
-
     const image = req.file;
 
     // Check for missing details
@@ -203,10 +188,10 @@ const adminDashboard = async (req, res) => {
       patience: user.length,
       latestAppointments: appointments.reverse().slice(0, 5),
     };
-     res.status(200).json({ success: true, dashData });
+    res.status(200).json({ success: true, dashData });
   } catch (err) {
     console.log(err);
-     res.status(404).json({ success: false, message: err.message });
+    res.status(404).json({ success: false, message: err.message });
   }
 };
 
