@@ -21,7 +21,8 @@ const MyProfile = () => {
       formData.append("gender", userData.gender);
       formData.append("dob", userData.dob);
       image && formData.append("image", image);
-      const { data } = await axios.post(`
+      const { data } = await axios.post(
+        `
         ${backEndUrl}/api/user/update-profile`,
         formData,
         {

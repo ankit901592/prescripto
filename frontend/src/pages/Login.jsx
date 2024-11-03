@@ -14,7 +14,7 @@ const Login = () => {
 
   const onSubmitHandler = async (e) => {
     console.log(token);
-    
+
     e.preventDefault();
     try {
       if (state == "Signup") {
@@ -36,7 +36,7 @@ const Login = () => {
         });
         if (data.success) {
           console.log(data.token);
-          localStorage.setItem("token",data.token);
+          localStorage.setItem("token", data.token);
           setToken(data.token);
         } else {
           toast.error(data.message);
