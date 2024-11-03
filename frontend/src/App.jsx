@@ -3,13 +3,13 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Doctor from './pages/Doctor'
 import Login from './pages/Login'
-import About from './pages/about'
+import About from './pages/About'
 import Contact from './pages/Contact'
 import MyProfile from './pages/MyProfile'
 import Myappointments from './pages/Myappointments'
 import Appointments from './pages/Appointments'
 import Navbar from './components/Navbar'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
